@@ -4,28 +4,7 @@
   include('assets/inc/checklogin.php');
   check_login();
   $doc_id = $_SESSION['doc_id'];
-  /*
-  Docto has no previlidge to delete a pharmaceutical - uncomment this code if you want em to
 
-  if(isset($_GET['delete_pharm_name']))
-  {
-        $id=intval($_GET['delete_pharm_name']);
-        $adn="delete from his_pharmaceuticals where phar_id=?";
-        $stmt= $mysqli->prepare($adn);
-        $stmt->bind_param('i',$id);
-        $stmt->execute();
-        $stmt->close();	 
-  
-          if($stmt)
-          {
-            $success = "Pharmaceutical Records Deleted";
-          }
-            else
-            {
-                $err = "Try Again Later";
-            }
-    }
-    */
 ?>
 
 <!DOCTYPE html>
